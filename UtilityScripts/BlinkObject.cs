@@ -51,6 +51,7 @@ public class BlinkObject : MonoBehaviour
         }
     }
 
+    // start blinking
     private IEnumerator Blink()
     {
         while (isBlinking)
