@@ -5,24 +5,24 @@ public class Collider2DGizmoVisualizer : MonoBehaviour
 {
 
 #if UNITY_EDITOR
-    private Collider2D collider2D;
+    private Collider2D thisCollider2d;
 
     void OnDrawGizmos()
     {
-        collider2D = GetComponent<Collider2D>(); // Always get the latest reference
+        thisCollider2d = GetComponent<Collider2D>(); // Always get the latest reference
 
         Gizmos.color = Color.green;
 
-        if (collider2D is BoxCollider2D box)
+        if (thisCollider2d is BoxCollider2D box)
         {
             Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
             Gizmos.DrawWireCube(box.offset, box.size);
         }
-        else if (collider2D is CircleCollider2D circle)
+        else if (thisCollider2d is CircleCollider2D circle)
         {
             Gizmos.DrawWireSphere((Vector2)transform.position + circle.offset, circle.radius * Mathf.Max(transform.lossyScale.x, transform.lossyScale.y));
         }
-        else if (collider2D is PolygonCollider2D polygon)
+        else if (thisCollider2d is PolygonCollider2D polygon)
         {
             Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
             Vector2[] points = polygon.points;
@@ -33,7 +33,7 @@ public class Collider2DGizmoVisualizer : MonoBehaviour
                 Gizmos.DrawLine(currentPoint, nextPoint);
             }
         }
-        else if (collider2D is EdgeCollider2D edge)
+        else if (thisCollider2d is EdgeCollider2D edge)
         {
             Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
             Vector2[] points = edge.points;
