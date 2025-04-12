@@ -1,0 +1,11 @@
+{
+  "name": "com.ggames.utilities",
+  "version": "1.0.0",
+  "displayName": "My Cool Package",
+  "description": "A modular event system for Unity",
+  "unity": "2020.3",
+  "author": {
+    "name": "Bruno Citoni",
+    "email": "brunocitoni.creative@gmail.com"
+  }
+}
