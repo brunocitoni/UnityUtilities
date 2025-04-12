@@ -1,0 +1,11 @@
+{
+  "name": "com.yourname.GGUtilities",
+  "version": "1.0.0",
+  "displayName": "Utilities",
+  "description": "An awesome package for Unity.",
+  "unity": "2020.3",
+  "author": {
+    "name": "GG",
+    "email": "bruno.citoni.creative@gmail.com"
+  }
+}
