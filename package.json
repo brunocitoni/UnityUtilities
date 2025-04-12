@@ -1,11 +1,11 @@
 {
-  "name": "com.ggames.utilities",
+  "name": "com.ggames.ggutilities",
   "version": "1.0.0",
-  "displayName": "My Cool Package",
-  "description": "A modular event system for Unity",
+  "displayName": "Utilities",
+  "description": "An awesome package for Unity.",
   "unity": "2020.3",
   "author": {
-    "name": "Bruno Citoni",
-    "email": "brunocitoni.creative@gmail.com"
+    "name": "GG",
+    "email": "bruno.citoni.creative@gmail.com"
   }
 }
